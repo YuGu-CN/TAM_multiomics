@@ -8,7 +8,7 @@ library(ComplexHeatmap)
 # ---------------- Figure 1
 
 # Get additional functions, etc.:
-scriptPath <- "/mnt/disk1/yu_new/project_3/code/scScalpChromatin-main"
+scriptPath <- "code"
 source(paste0(scriptPath, "/plop2g_vecing_config.R"))
 source(paste0(scriptPath, "/misc_helpers.R"))
 source(paste0(scriptPath, "/matrix_helpers.R"))
