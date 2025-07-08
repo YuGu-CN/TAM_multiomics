@@ -1,12 +1,8 @@
 # 🧬 TAM_multiomics
 
-**Integrated single-cell multi-omics analysis of tumor-associated macrophage (TAM) subtypes in hepatocellular carcinoma (HCC)**
+**Integrated single-cell analysis dissects regulatory mechanisms underlying tumor-associated macrophage plasticity in hepatocellular carcinoma.**
 
-This repository contains reproducible R scripts and helper functions accompanying our manuscript:
-
-> **"Integrated single-cell analysis dissects regulatory mechanisms underlying tumor-associated macrophage plasticity in hepatocellular carcinoma"**
->
-> ---
+This repository contains reproducible R scripts and helper functions accompanying our manuscript.
 
 ## 📁 Repository structure
 
