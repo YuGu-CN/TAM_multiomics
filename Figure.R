@@ -206,7 +206,7 @@ dev.off()
 
 # --------------------- Figure 2
 {
-    # 构建伪bulk
+
     projHeme_TAM2 <- addGroupCoverages(ArchRProj = projHeme_TAM1, sampleLabels = "Sample", groupBy = "macro_anno", force = T)
 
     # assign macs2 path
@@ -221,10 +221,9 @@ dev.off()
         pathToMacs2 = pathToMacs2, force = T
     )
 
-    # 查看此峰值集
+
     # getPeakSet(projHeme4)
 
-    # 添加峰矩阵
     projHeme_TAM3 <- addPeakMatrix(projHeme_TAM2, force = TRUE)
     # getAvailableMatrices(projHeme_TAM3)
 
@@ -248,7 +247,6 @@ dev.off()
     forlook <- as.tibble(getPeakSet(projHeme_TAM3))
     forlook$celltype <- sapply(strsplit(forlook$GroupReplicate, "._."), "[", 1)
 
-    # 每个细胞类型元件的分布
     plots_list <- list()
     for (i in 1:length(celltype)) {
         tmp_celltype <- celltype[i]
