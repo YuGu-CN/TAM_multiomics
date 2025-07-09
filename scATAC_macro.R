@@ -71,8 +71,8 @@ peak_data$celltype <- sapply(strsplit(peak_data$GroupReplicate, "._."), "[", 1)
 
 proj <- addMotifAnnotations(proj, motifSet = "cisbp", name = "Motif")
 
-motifsUp <- peakAnnoEnrichment(markerTest, proj, peakAnnotation = "Motif", cutOff = "FDR <= 0.1 & Log2FC >= 0.5")
-motifsDo <- peakAnnoEnrichment(markerTest, proj, peakAnnotation = "Motif", cutOff = "FDR <= 0.1 & Log2FC <= -0.5")
+motifsUp <- peakAnnoEnrichment(markerTest, proj, peakAnnotation = "Motif", cutOff = "FDR <= 0.05 & Log2FC >= 0.57")
+motifsDo <- peakAnnoEnrichment(markerTest, proj, peakAnnotation = "Motif", cutOff = "FDR <= 0.05 & Log2FC <= -0.57")
 
 df_up <- data.frame(TF = rownames(motifsUp), mlog10Padj = assay(motifsUp)[, 1]) %>%
     arrange(desc(mlog10Padj)) %>%
